@@ -29,11 +29,17 @@
 
             <section class="second-banner"></section>
 
-            <section class="middle-banner" id="about">
+            <section class="form-container">
 
-                <p>Send a Note</p>
-                <p>Get a Note</p>
-                <p>Easy as That</p>
+                <form action="/user/notes/createNote" method="post" class="form">
+
+                    <label for="msg" class="msg-label">Write your message:</label>
+                    <textarea id="msg" name="msg" class="message-input" 
+                                placeholder="Y'know what? You're awesome!" 
+                                autofocus required></textarea>
+                    <button type="submit" class="submit-btn">Send!</button>
+
+                </form>
 
             </section>
 

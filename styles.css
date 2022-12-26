@@ -21,6 +21,7 @@
     flex-direction: column;
 
     background-color: #95f5f5;
+    color: #2F323A;
 
     font-family: 'Kanit', sans-serif;
 }
@@ -48,12 +49,14 @@
 
     height: 60vh;
 
-    background-color: #7C77B9;
+    background: url(./assets/paperplane-notrail.svg) 1260px 10px no-repeat,
+                url(./assets/dashed-line-trail.png) 20px 90px no-repeat, #7C77B9;
+    background-size:  20% 20%, 90% 75%;
 
     text-align: center;
     padding: 100px;
 
-    margin-top: 0px;
+    margin-top: -10px;
 
 }
 
@@ -67,6 +70,8 @@
 
     text-align: left;
     margin-left: 50px;
+    margin-top: -50px;
+    padding-bottom: 50px;
 
 }
 
@@ -74,6 +79,7 @@
 
     text-align: right;
     margin-right: 50px;
+    margin-top: 50px;
 
 }
 
@@ -83,6 +89,21 @@
 
     background-color: #2F323A;
 
+    padding: 20px;
+
+}
+
+.footer>p {
+
+    color: #FAE3E3;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #95f5f5;
 }
 
 .top-banner {
@@ -95,6 +116,7 @@
     width: 30%;
     padding: 0px;
     margin-left: auto;
+    margin-top: -10px;
 
     text-align: center;
 
@@ -115,11 +137,14 @@
 
     height: 0px;
 
+    padding-bottom: 10px;
+
 }
 
 
 .nav-link {
     text-decoration: none;
+    color: #2F323A;
    
     height: 85px;
     width: 100%;
@@ -133,3 +158,78 @@
     background-color: #FED766;
 }
 
+.form-container {
+    height: 60vh;
+    width: 100%;
+    background-color: #7C77B9;
+    padding: 50px;
+}
+
+.form {
+    margin: auto;
+    margin-top: -10px;
+
+    background-color: #95f5f5;
+    width: 700px;
+    height: auto;
+    padding: 5px 20px 10px 20px;
+
+    border-radius: 20px;
+}
+
+.message-input,
+.submit-btn {
+
+    background-color: #FAE3E3;
+    display: block;
+    margin: auto;
+
+    border-radius: 20px;
+
+}
+
+.submit-btn {
+
+    width:100px;
+    height: 25px;
+
+}
+
+.submit-btn:hover{
+
+    background-color: #7C77B9;
+    color: #FAE3E3;
+
+}
+
+.msg-label {
+
+    color: #2F323A;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.message-input {
+
+    width: 100%;
+    height: 280px;
+    resize: none;
+    padding: 10px;
+    line-height: 25px;
+    font-size: 16px;
+    
+
+}
+
+.message-input:focus {
+
+    outline: solid #7C77B9;
+
+}
+
+.message-input:invalid {
+
+    outline: 2px solid #ff8787;
+
+}

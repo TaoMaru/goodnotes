@@ -197,7 +197,7 @@
     width: 100%;
     background-color: #7C77B9;
     /*background-color: #A663CC;*/
-    padding: 50px;
+    padding: 30px;
 
     font-weight: 300;
 }
@@ -218,7 +218,8 @@
 }
 
 .message-input,
-.submit-btn {
+.submit-btn,
+.message-display {
 
     background-color: #FAE3E3;
     /*background-color: #F6C5AF;*/
@@ -232,22 +233,17 @@
 
 }
 
-.message-input {
-
-    font-weight: 300;
-
-}
-
 .submit-btn {
 
     width: auto;
     height: 35px;
-    padding: 5px;
+    padding: 5px 10px;
 
     border-radius: 10px;
     margin-top: 5px;
 
     font-weight: 500;
+    color: #7C77B9;
 
 }
 
@@ -272,11 +268,13 @@
 .message-input {
 
     width: 100%;
-    height: 280px;
+    height: 300px;
     resize: none;
     padding: 10px;
     line-height: 25px;
     font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 300;
 
 }
 
@@ -286,15 +284,18 @@
 
 }
 
-.message-input:invalid {
+.note-view {
 
-    outline: 2px solid #ff8787 /* #F6C5AF*/;
+    height: 380px;
+    box-shadow: inset -2px -2px #2F323A;
 
 }
 
-.note-view {
+.message-display {
 
-    height: 300px;
-    box-shadow: inset -2px -2px #2F323A;
+    height: 330px;
+    width: 100%;
+
+    box-shadow: -1px -1px 2px #2F323A;
 
 }

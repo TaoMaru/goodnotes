@@ -12,6 +12,13 @@
     chalk muted yellow: FED766
     off white: FAE3E3 */
 
+/* second color palatte:
+    light mint green: DAF7DC
+    mint green: A9CBB7
+    peach: F6C5AF
+    light purple: A663CC
+    chalk purple hue brown: 403233 */
+
 .main-container {
     width: 100%;
     height: 100vh;
@@ -22,8 +29,11 @@
 
     background-color: #95f5f5;
     color: #2F323A;
+    /*background-color: #A9CBB7;
+    color: #403233;*/
 
     font-family: 'Kanit', sans-serif;
+    font-weight: 300;
 }
 
 .top-banner,
@@ -41,17 +51,28 @@
 .bottom-banner {
 
     background-color: #FED766;
+    /*background-color: #F6C5AF;*/
     height: 10px;
 
+    z-index: 2;
+
+}
+
+.second-banner {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, .6);
+}
+
+.bottom-banner {
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, .6);
 }
 
 .middle-banner {
 
     height: 60vh;
 
-    background: url(./assets/paperplane-notrail.svg) 1260px 10px no-repeat,
-                url(./assets/dashed-line-trail.png) 20px 90px no-repeat, #7C77B9;
-    background-size:  20% 20%, 90% 75%;
+    background: url(./assets/paperplane-notrail.svg) 1255px 25px no-repeat,
+                url(./assets/dashed-line-trail.png) 20px 120px no-repeat, #7C77B9 /*#A663CC*/;
+    background-size:  20% 20%, 90% 70%;
 
     text-align: center;
     padding: 100px;
@@ -63,6 +84,9 @@
 .middle-banner>p {
 
     font-size: 40px;
+    font-weight: 600;
+    text-shadow: -2px 3px 2px #2F323A;
+    color: #FAE3E3;
 
 }
 
@@ -73,6 +97,8 @@
     margin-top: -50px;
     padding-bottom: 50px;
 
+    /*text-shadow: -3px -2px 2px #FAE3E3;*/
+
 }
 
 .middle-banner>p:last-child {
@@ -80,6 +106,7 @@
     text-align: right;
     margin-right: 50px;
     margin-top: 50px;
+    /*text-shadow: 3px -2px 2px #FAE3E3;*/
 
 }
 
@@ -88,6 +115,7 @@
     height: 5vh;
 
     background-color: #2F323A;
+    /*background-color: #403233;*/
 
     padding: 20px;
 
@@ -96,6 +124,7 @@
 .footer>p {
 
     color: #FAE3E3;
+    /*color: #F6C5AF;*/
     font-size: 18px;
     text-align: center;
 
@@ -104,6 +133,7 @@
 .footer-link {
     text-decoration: none;
     color: #95f5f5;
+    /*color: #DAF7DC;*/
 }
 
 .top-banner {
@@ -145,6 +175,7 @@
 .nav-link {
     text-decoration: none;
     color: #2F323A;
+    /*color: #403233;*/
    
     height: 85px;
     width: 100%;
@@ -156,20 +187,29 @@
 .nav-link:hover {
     color: #FAE3E3;
     background-color: #FED766;
+    /*color: #F6C5AF;
+    background-color: #DAF7DC;*/
 }
 
-.form-container {
+.form-container,
+.note-container {
     height: 60vh;
     width: 100%;
     background-color: #7C77B9;
+    /*background-color: #A663CC;*/
     padding: 50px;
+
+    font-weight: 300;
 }
 
-.form {
+.form,
+.note-view {
     margin: auto;
     margin-top: -10px;
 
     background-color: #95f5f5;
+    /*background-color: #A9CBB7;*/
+
     width: 700px;
     height: auto;
     padding: 5px 20px 10px 20px;
@@ -181,17 +221,33 @@
 .submit-btn {
 
     background-color: #FAE3E3;
+    /*background-color: #F6C5AF;*/
+
     display: block;
     margin: auto;
 
     border-radius: 20px;
 
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.message-input {
+
+    font-weight: 300;
+
 }
 
 .submit-btn {
 
-    width:100px;
-    height: 25px;
+    width: auto;
+    height: 35px;
+    padding: 5px;
+
+    border-radius: 10px;
+    margin-top: 5px;
+
+    font-weight: 500;
 
 }
 
@@ -199,12 +255,15 @@
 
     background-color: #7C77B9;
     color: #FAE3E3;
+    /*background-color: #A9CBB7;
+    color: #DAF7DC;*/
 
 }
 
 .msg-label {
 
     color: #2F323A;
+    /*color: #403233;*/
     margin: auto;
     padding: 10px;
 
@@ -218,18 +277,24 @@
     padding: 10px;
     line-height: 25px;
     font-size: 16px;
-    
 
 }
 
 .message-input:focus {
 
-    outline: solid #7C77B9;
+    outline: solid #7C77B9 /*#A663CC*/;
 
 }
 
 .message-input:invalid {
 
-    outline: 2px solid #ff8787;
+    outline: 2px solid #ff8787 /* #F6C5AF*/;
+
+}
+
+.note-view {
+
+    height: 300px;
+    box-shadow: inset -2px -2px #2F323A;
 
 }

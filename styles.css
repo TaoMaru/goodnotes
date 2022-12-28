@@ -130,10 +130,13 @@
     flex-direction: column;
     height: auto;
 
+    position: relative;
+
 }
 
 .about-send,
 .about-get,
+.about-send-container,
 .about-better {
 
     flex: 1 1 auto;
@@ -159,6 +162,49 @@
     color:#2F323A;
 
     text-align: center;
+    margin-left: 500px;
+
+}
+
+.about-send-container {
+    position: absolute;
+    border: 3px solid #FED766;
+
+    width: 50%;
+
+    overflow: hidden;
+    display: inline-block;
+
+    transform: skewX(-20deg);
+    transition: width 1.2s ease-in-out;
+
+    pointer-events: none;
+
+    margin-left: -75px;
+
+    padding: 0;
+}
+
+.about-send {
+
+    width: 1600px;
+    padding-right: 500px;
+
+    transform: skewX(20deg);
+    pointer-events: auto;
+    margin-left: 75px;
+
+}
+
+.about-send-container:hover {
+
+    width: 90%;
+
+}
+
+.about-get:hover + .about-send-container {
+
+    width: 250px;
 
 }
 

@@ -5,6 +5,10 @@
 
 }
 
+.body {
+    height: 100vh;
+}
+
 /* color palette:
     teal: 95F5F5
     light gray purple: 7C77B9
@@ -21,7 +25,7 @@
 
 .main-container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     align-items: center;
@@ -39,6 +43,8 @@
 .top-banner,
 .second-banner,
 .middle-banner,
+.middle-strip-banner,
+.about-banner,
 .bottom-banner,
 .footer {
 
@@ -48,11 +54,12 @@
 }
 
 .second-banner,
-.bottom-banner {
+.bottom-banner,
+.middle-strip-banner {
 
     background-color: #FED766;
     /*background-color: #F6C5AF;*/
-    height: 10px;
+    height: 50px;
 
     z-index: 2;
 
@@ -62,13 +69,20 @@
     box-shadow: 0px 3px 4px rgba(0, 0, 0, .6);
 }
 
+.middle-strip-banner {
+
+    box-shadow: 0px -3px 4px rgba(0, 0, 0, .6),
+                0px 3px 4px rgba(0, 0, 0, .6);
+
+}
+
 .bottom-banner {
     box-shadow: 0px -3px 4px rgba(0, 0, 0, .6);
 }
 
 .middle-banner {
 
-    height: 60vh;
+    height: 70vh;
 
     background: url(./assets/paperplane-notrail.svg) 1255px 25px no-repeat,
                 url(./assets/dashed-line-trail.png) 20px 120px no-repeat, #7C77B9 /*#A663CC*/;
@@ -110,9 +124,56 @@
 
 }
 
+.about-banner{
+
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
+}
+
+.about-send,
+.about-get,
+.about-better {
+
+    flex: 1 1 auto;
+    height: 60vh;
+
+    font-size: 24px;
+    font-weight: 300;
+    padding: 80px 200px;
+}
+
+.about-send,
+.about-better {
+
+    background-color: #95f5f5;
+    color: #2F323A;
+    text-align: right;
+
+}
+
+.about-get {
+
+    background-color:#FAE3E3;
+    color:#2F323A;
+
+    text-align: center;
+
+}
+
+.about-send>p:first-child,
+.about-better>p:first-child {
+
+    text-align: left;
+    font-size: 28px;
+
+}
+
+
 .footer {
 
-    height: 5vh;
+    height: 30px;
 
     background-color: #2F323A;
     /*background-color: #403233;*/
@@ -136,8 +197,19 @@
     /*color: #DAF7DC;*/
 }
 
+.main-footer {
+    height: 60px;
+}
+
 .top-banner {
     margin-bottom: 20px;
+    height: 50px;
+}
+
+.note-top-banner {
+
+    margin-bottom: 0px;
+
 }
 
 .nav-items {

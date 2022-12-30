@@ -38,6 +38,8 @@
 
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
+
+    overflow: hidden;
 }
 
 .top-banner,
@@ -165,6 +167,10 @@
     color: #FAE3E3;
     text-shadow: 2px 2px 3px #2F323A;
     font-weight: 500;
+    font-size: 30px;
+
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -228,8 +234,7 @@
 
 }
 
-.about-send>p:first-child,
-.about-better>p:first-child {
+.about-send>p:first-child {
 
     text-align: left;
     font-size: 28px;
@@ -242,6 +247,12 @@
 
 }
 
+.about-better>p:first-child {
+
+    text-align: left;
+
+}
+
 /*.about-better svg {
 
     margin-right: 450px;
@@ -249,6 +260,78 @@
     width: auto;
 
 }*/
+
+.about-better-icons-container {
+
+    position: absolute;
+
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+
+    margin-top: -170px;
+    margin-left: -1335px;
+
+    text-align: left;
+
+}
+
+.wifi-icon {
+
+    height: 200px;
+    width: auto;
+    display: inline;
+
+    margin-left: 425px;
+    margin-top: -300px;
+
+    transform: rotate(90deg);
+
+}
+
+
+/*.wifi-icon {
+    animation: 3s wifiPulse infinite ease-in-out;
+}*/
+
+
+.curvy-bit {
+
+    display: none;
+
+}
+
+.heart-icon {
+
+    height: 200px;
+    width: auto;
+    display: block;
+
+    margin-left: 250px;
+    margin-top: 100px;
+
+    animation: 3s pulse infinite ease-in-out;
+
+
+}
+
+.globe-icon {
+
+    height: 150px;
+    width: auto;
+    display: none;
+
+}
+
+.plane-icon {
+
+    height: 100px;
+    width: auto;
+    display: none;
+
+}
 
 .footer {
 
@@ -448,5 +531,39 @@
     width: 100%;
 
     box-shadow: -1px -1px 2px #2F323A;
+
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes wifiPulse {
+
+    0% {
+        clip-path: url("#wifi-clip-1"),
+                    url("#wifi-clip-2"),
+                    url("#wifi-clip-3");
+    }
+    30% {
+        clip-path: url("#wifi-clip-2"),
+                    url("#wifi-clip-3");
+    }
+    60% {
+        clip-path: url("#wifi-clip-3");
+    }
+    100% {
+        clip-path: none;
+    }
 
 }

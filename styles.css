@@ -276,6 +276,7 @@
 
     text-align: left;
 
+
 }
 
 .wifi-icon {
@@ -291,11 +292,27 @@
 
 }
 
+#wifi-1 {
 
-/*.wifi-icon {
-    animation: 3s wifiPulse infinite ease-in-out;
-}*/
+    animation: 3s wifiBlink infinite ease-in-out;
 
+}
+
+#wifi-2 {
+
+    /*animation: 2s wifiBlink infinite ease-in-out;
+    animation-delay: 3.5s;*/
+    animation: 3s wifiBlink2 infinite ease-in-out;
+
+}
+
+#wifi-3 {
+
+    /*animation: 1s wifiBlink infinite ease-in-out;
+    animation-delay: 6s;*/
+    animation: 3s wifiBlink3 infinite ease-in-out;
+
+}
 
 .curvy-bit {
 
@@ -548,22 +565,57 @@
 
 }
 
-@keyframes wifiPulse {
+@keyframes wifiBlink {
 
     0% {
-        clip-path: url("#wifi-clip-1"),
-                    url("#wifi-clip-2"),
-                    url("#wifi-clip-3");
+        opacity: 0;
     }
     30% {
-        clip-path: url("#wifi-clip-2"),
-                    url("#wifi-clip-3");
+        opacity: 1;
+        transform: opacity .5s;
     }
-    60% {
-        clip-path: url("#wifi-clip-3");
+    75% {
+        opacity: 1;
     }
     100% {
-        clip-path: none;
+        opacity: 0;
+        transform: opacity .3s;
+    }
+}
+
+@keyframes wifiBlink2 {
+
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+        transform: opacity .5s;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: opacity .3s;
+    }
+}
+
+@keyframes wifiBlink3 {
+
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        transform: opacity .5s;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: opacity .3s;
     }
 
 }

@@ -249,8 +249,16 @@
 
 .about-better>p:first-child {
 
-    text-align: left;
+    text-align: center;
+    padding-right: 150px;
 
+}
+
+.about-better>p:nth-child(2) {
+
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 250px;
 }
 
 /*.about-better svg {
@@ -267,15 +275,30 @@
 
     display: inline-block;
 
-    width: 100%;
+    width: 50%;
     height: 100%;
-    border: 3px solid black;
 
     margin-top: -170px;
     margin-left: -1335px;
 
     text-align: left;
 
+
+}
+
+.about-better-icons-container-2 {
+
+    position: absolute;
+
+    display: inline-block;
+
+    width: 50%;
+    height: 100%;
+
+    text-align: right;
+
+    margin-left:-570px;
+    margin-top: -170px;
 
 }
 
@@ -338,7 +361,9 @@
 
     height: 150px;
     width: auto;
-    display: none;
+    
+    margin-right: 200px;
+    margin-top: 200px;
 
 }
 

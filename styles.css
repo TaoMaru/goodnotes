@@ -308,7 +308,7 @@
     width: auto;
     display: inline;
 
-    margin-left: 425px;
+    margin-left: 375px;
     margin-top: -300px;
 
     transform: rotate(90deg);
@@ -349,8 +349,8 @@
     width: auto;
     display: block;
 
-    margin-left: 250px;
-    margin-top: 100px;
+    margin-left: 180px;
+    margin-top: 70px;
 
     animation: 3s pulse infinite ease-in-out;
 
@@ -362,8 +362,22 @@
     height: 150px;
     width: auto;
     
-    margin-right: 200px;
-    margin-top: 200px;
+    margin-right: 175px;
+    margin-top: 150px;
+
+}
+
+.dashed-circle-icon {
+
+    height: 190px;
+    width: auto;
+
+    position: absolute;
+
+    margin-left: -345px;
+    margin-top: 130px;
+
+    animation: 5s dashAlong infinite;
 
 }
 
@@ -641,6 +655,14 @@
     100% {
         opacity: 0;
         transform: opacity .3s;
+    }
+
+}
+
+@keyframes dashAlong {
+
+    to {
+        stroke-dashoffset: 102;
     }
 
 }

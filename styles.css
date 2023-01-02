@@ -383,9 +383,19 @@
 
 .plane-icon {
 
+
+
     height: 100px;
     width: auto;
-    display: none;
+    position: absolute;
+
+    margin-left: -1000px;
+    margin-top: 200px;
+
+    transform: rotate(30deg);
+
+    animation: 5s flyAcross infinite;
+    
 
 }
 
@@ -663,6 +673,66 @@
 
     to {
         stroke-dashoffset: 102;
+    }
+
+}
+
+@keyframes flyAcross {
+
+    20% {
+        transform: translateX(620px) scale(.25) rotate(90deg);
+    }
+    25% {
+        transform: translateX(628px) translateY(15px) 
+                    scale(.25) rotate(85deg);
+    }
+    30% {
+        transform: translateX(645px) translateY(30px) 
+                    scale(.25) rotate(80deg);
+    }
+    35% {
+        transform: translateX(670px) translateY(45px) 
+                    scale(.25) rotate(55deg);
+    }
+    40% {
+        transform: translateX(700px) translateY(60px)
+                    scale(.25) rotate(50deg);
+    }
+    45% {
+        transform: translateX(735px) translateY(45px) 
+                    scale(.25) rotate(45deg);
+    }
+    50% {
+        transform: translateX(750px) translateY(30px) 
+                    scale(.25);
+    }
+    55% {
+        transform: translateX(770px) translateY(15px) 
+                    scale(.25) rotate(-10deg);
+    }
+    60% {
+        transform: translateX(780px) translateY(-15px)
+                    scale(.25) rotate(-20deg);
+    }
+    65% {
+        transform: translateX(775px) translateY(-45px)
+                    scale(.25) rotate(-55deg);
+    }
+    70% {
+        transform: translateX(760px) translateY(-65px)
+                    scale(.25) rotate(-80deg);
+    }
+    75% {
+        transform: translateX(740px) translateY(-85px)
+                    scale(.25) rotate(-105deg);
+    }
+    80% {
+        transform: translateX(700px) translateY(-100px) 
+                    scale(.25) rotate(-130deg);
+    }
+    100% {
+        opacity: .5;
+        transform: opacity .5s;
     }
 
 }

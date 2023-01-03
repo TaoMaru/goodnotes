@@ -82,6 +82,13 @@
     box-shadow: 0px -3px 4px rgba(0, 0, 0, .6);
 }
 
+.note-second-banner,
+.note-bottom-banner {
+
+    height: 45px;
+
+}
+
 .middle-banner {
 
     height: 70vh;
@@ -323,16 +330,12 @@
 
 #wifi-2 {
 
-    /*animation: 2s wifiBlink infinite ease-in-out;
-    animation-delay: 3.5s;*/
     animation: 3s wifiBlink2 infinite ease-in-out;
 
 }
 
 #wifi-3 {
 
-    /*animation: 1s wifiBlink infinite ease-in-out;
-    animation-delay: 6s;*/
     animation: 3s wifiBlink3 infinite ease-in-out;
 
 }
@@ -354,7 +357,6 @@
     margin-top: 70px;
 
     animation: 3s pulse infinite ease-in-out;
-
 
 }
 
@@ -384,8 +386,6 @@
 
 .plane-icon {
 
-
-
     height: 100px;
     width: auto;
     position: absolute;
@@ -395,12 +395,9 @@
 
     transform: rotate(30deg);
 
-    /*animation: 5s flyAcross infinite;*/
-
     offset-path: path("M0,0 C620,15 650,60 700,90 C700,90 750,120 790,90 C790,90 835,60 830,15 C830,15 815,-50 770,-53 C770,-53 740,-65 695,-35 C695,-35 675,-5 670,10 C670,10 660,50 690,80");
     animation: move 5s infinite ease-out;
     
-
 }
 
 .footer {
@@ -440,7 +437,7 @@
 
 .note-top-banner {
 
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 
 }
 
@@ -493,15 +490,17 @@
     background-color: #FED766;
     /*color: #F6C5AF;
     background-color: #DAF7DC;*/
+    text-shadow: 1px 1px #2F323A;
 }
 
 .form-container,
 .note-container {
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     background-color: #7C77B9;
     /*background-color: #A663CC;*/
     padding: 30px;
+    padding-top: 70px;
 
     font-weight: 300;
 }
@@ -519,6 +518,8 @@
     padding: 5px 20px 10px 20px;
 
     border-radius: 20px;
+
+    text-align: left;
 }
 
 .message-input,
@@ -555,6 +556,7 @@
 
     background-color: #7C77B9;
     color: #FAE3E3;
+    text-shadow: 1px 1px #2F323A;
     /*background-color: #A9CBB7;
     color: #DAF7DC;*/
 
@@ -681,109 +683,6 @@
 
 }
 
-@keyframes flyAcross {
-
-    15% {
-        transform: translateX(620px) scale(.25) rotate(90deg);
-    }
-    17% {
-        transform: translateX(628px) translateY(15px) 
-                    scale(.25) rotate(85deg);
-    }
-    19% {
-        transform: translateX(645px) translateY(40px) 
-                    scale(.25) rotate(80deg);
-    }
-    21% {
-        transform: translateX(670px) translateY(50px) 
-                    scale(.25) rotate(55deg);
-    }
-    23% {
-        transform: translateX(700px) translateY(55px)
-                    scale(.25) rotate(50deg);
-    }
-    25% {
-        transform: translateX(735px) translateY(50px) 
-                    scale(.25) rotate(45deg);
-    }
-    27% {
-        transform: translateX(750px) translateY(40px) 
-                    scale(.25);
-    }
-    29% {
-        transform: translateX(770px) translateY(15px) 
-                    scale(.25) rotate(-10deg);
-    }
-    31% {
-        transform: translateX(780px) translateY(-15px)
-                    scale(.25) rotate(-20deg);
-    }
-    33% {
-        transform: translateX(780px) translateY(-35px)
-                    scale(.25) rotate(-55deg);
-    }
-    35% {
-        transform: translateX(760px) translateY(-70px)
-                    scale(.25) rotate(-80deg);
-    }
-    37% {
-        transform: translateX(740px) translateY(-90px)
-                    scale(.25) rotate(-105deg);
-    }
-    39% {
-        transform: translateX(700px) translateY(-100px) 
-                    scale(.25) rotate(-130deg);
-    }
-    41% {
-        transform: translateX(650px) translateY(-85px)
-                    scale(.25) rotate(-140deg);
-    }
-    43% {
-        transform: translateX(630px) translateY(-60px)
-                    scale(.25) rotate(-175deg);
-    }
-    45% {
-        opacity: 1;
-        transform: translateX(620px) translateY(-30px)
-                    scale(.25) rotate(-200deg);
-    }
-    47% {
-        opacity: .8;
-        transform: translateX(615px) translateY(-10px)
-                    scale(.25) rotate(-230deg);
-    }
-    49% {
-        opacity: .6;
-        transform: translateX(620px)
-                    scale(.25) rotate(-235deg);
-    }
-    51% {
-        opacity: .4;
-        transform: translateX(625px) translateY(10px)
-                    scale(.25) rotate(-240deg);
-    }
-    53% {
-        opacity: .2;
-        transform: translateX(635px) translateY(15px)
-                    scale(.25) rotate(-245deg);
-    }
-    55% {
-        opacity: 0;
-        transform: translateX(645px) translateY(40px) 
-                    scale(.25) rotate(-250deg);
-    }
-    57% {
-        opacity: 0;
-        transform: translateX(670px) translateY(50px) 
-                    scale(.25) rotate(-255deg);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(670px) translateY(50px) 
-                    scale(.25) rotate(-255deg);
-        transition: all .3s ease;
-    }
-}
 
 @keyframes move {
     30% {

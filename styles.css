@@ -395,7 +395,10 @@
 
     transform: rotate(30deg);
 
-    animation: 5s flyAcross infinite;
+    /*animation: 5s flyAcross infinite;*/
+
+    offset-path: path("M0,0 C620,15 650,60 700,90 C700,90 750,120 790,90 C790,90 835,60 830,15 C830,15 815,-50 770,-53 C770,-53 740,-65 695,-35 C695,-35 675,-5 670,10 C670,10 660,50 690,80");
+    animation: move 5s infinite ease-out;
     
 
 }
@@ -778,5 +781,22 @@
         opacity: 0;
         transform: translateX(670px) translateY(50px) 
                     scale(.25) rotate(-255deg);
+        transition: all .3s ease;
+    }
+}
+
+@keyframes move {
+    30% {
+        offset-distance: 58%;
+        transform: scale(.25);
+    }
+    70% {
+        offset-distance: 100%;
+        transform: scale(.25);
+    }
+    100% {
+        offset-distance: 100%;
+        transform: scale(.25);
+        opacity:0;
     }
 }

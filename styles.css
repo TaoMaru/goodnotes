@@ -707,7 +707,7 @@
     }
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:460px) {
 
     .middle-banner {
 
@@ -718,7 +718,7 @@
         background-size:  10% 10%, 95% 50%;
     
         text-align: center;
-        padding: 50px;
+        padding: 15%;
     
         margin-top: -10px;
     
@@ -736,7 +736,7 @@
         text-align: left;
         margin-left: 0px;
         margin-top: -10px;
-        padding-bottom: 50px;
+        padding-bottom: 15%;
     
         /*text-shadow: -3px -2px 2px #FAE3E3;*/
     
@@ -745,7 +745,7 @@
     
         text-align: right;
         margin-right: 0px;
-        margin-top: 50px;
+        margin-top: 15%;
         /*text-shadow: 3px -2px 2px #FAE3E3;*/
     
     }
@@ -759,7 +759,7 @@
 
         font-size: 20px;
         font-weight: 400;
-        padding: 10px 20px;
+        padding: 2% 5%;
     }
     .about-send-container {
     
@@ -810,13 +810,13 @@
 
         text-align: left;
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 7%;
         margin-left: 0px;
     
     }
     .about-send>p:nth-child(2) {
     
-        margin-top: 15px;
+        margin-top: 5%;
     
     }
     .about-get {
@@ -828,7 +828,7 @@
         margin-left: 0px;
     
         font-size: 20px;
-        padding-top: 20px;
+        padding-top: 4%;
         padding-left: 0px;
     
         font-weight: 400;
@@ -853,7 +853,7 @@
         text-align: center;
         padding-right: 0px;
         width: 50%;
-        margin-top: 40px;
+        margin-top: 10%;
     
     }
     .about-better>p:nth-child(2) {
@@ -872,25 +872,25 @@
         width: 50%;
         height: 100%;
     
-        margin-top: -480px;
-        margin-left: -560px;
+        margin-top: -105%;
+        margin-left: -125%;
     
         text-align: left;
     
     }
     .heart-icon {
 
-        height: 100px;
+        height: 45%;
         width: auto;
 
     }
     .wifi-icon {
 
-        height: 100px;
+        height: 50%;
         width: auto;
         display: inline;
     
-        margin-left: 270px;
+        margin-left: 120%;
         margin-top: -300px;
     
         transform: rotate(90deg);
@@ -925,8 +925,8 @@
     
         text-align: right;
     
-        margin-left: -160px;
-        margin-top: -280px;
+        margin-left: -40%;
+        margin-top: -63%;
     
     }
     .globe-icon {
@@ -934,8 +934,8 @@
         height: 150px;
         width: auto;
         
-        margin-right: 175px;
-        margin-top: 150px;
+        margin-right: 28%;
+        margin-top: 68%;
     
     }
     
@@ -946,8 +946,8 @@
     
         position: absolute;
     
-        margin-left: -243px;
-        margin-top: -182px;
+        margin-left: -105%;
+        margin-top: 59%;
     
         animation: 5s dashAlong infinite ease;
     
@@ -959,8 +959,8 @@
         width: auto;
         position: absolute;
     
-        margin-left: -896px;
-        margin-top: -112px;
+        margin-left: -400%;
+        margin-top: 91%;
     
         transform: rotate(30deg);
     
